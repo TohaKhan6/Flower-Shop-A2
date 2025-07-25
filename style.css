@@ -203,3 +203,274 @@ p {
     justify-content: center;
     margin-top: 0px;
 }
+
+/* Flower lover section styles */
+.plants-lover {
+    margin-top: 130px;
+}
+.plants-lover-section {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plants-lover-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.upper-logo {
+    max-width: 280px;
+    margin-left: 400px;
+    margin-bottom: -150px;
+    position: relative;
+}
+.plants-info h2 {
+    font-size: 3.125rem;
+    font-weight: 600;
+}
+.latest-deals-section {
+    text-align: center;
+}
+/* deal section design */
+.deal-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.img-card {
+    height: 200px;
+    background-image: url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* ---Deal Section er Img er Kaj-- */
+.img-container {
+    display: grid;
+    grid-template-areas:
+        "img-card2 img-card3"
+        "img-card1 img-card3";
+    gap: 20px;
+    padding: 20px;
+}
+
+.img-card1 {
+    grid-area: img-card1;
+    background-image: url("./assets/deal-ana.png");
+}
+.img-card2 {
+    grid-area: img-card2;
+    background-image: url("./assets/deal-bloom.png");
+}
+.img-card3 {
+    grid-area: img-card3;
+    background-image: url("./assets/deal-zabo.png");
+}
+
+.img-card1,
+.img-card2,
+.img-card3 {
+    position: relative;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card3 {
+    height: 320px;
+}
+
+.img-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background: rgba(54, 4, 4, 0.4);
+    border-radius: 10px;
+}
+
+.img-text h6 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.img-text a {
+    color: white;
+}
+
+/* Email Section */
+.Email-section {
+    background-image: url("./assets/news-letter-bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.Email-content {
+    width: 100%;
+    padding: 20px 8px;
+}
+
+.Email-content h2 {
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: white;
+}
+
+.Email-form input {
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    flex: 1;
+}
+
+.email-btn {
+    background-color: #ff6f00;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
+.Email-box {
+    margin-top: 120px;
+}
+
+/* Footer */
+.footer-container {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(107, 114, 128, 1);
+}
+.footer-info {
+    max-width: 350px;
+}
+.footer-link {
+    display: flex;
+    gap: 50px;
+}
+.footer-link ul li {
+    margin-bottom: 20px;
+}
+.footer-link ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-logo {
+    display: flex;
+    gap: 30px;
+}
+.footer-logo > img {
+    width: 36px;
+    height: 36px;
+    padding: 1px;
+}
+
+/* ----- Responsive Design ----- */
+
+/* phones */
+@media screen and (max-width: 576px) {
+    .hide {
+        display: none;
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar,
+    .nav-links,
+    .banner {
+        align-items: center;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+    .footer-logo {
+        flex-direction: row;
+    }
+    .banner-img {
+        width: 390px;
+    }
+
+    .product-grid {
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+    .plants-lover-container {
+        flex-direction: column;
+    }
+    .big-logo {
+        max-width: 100%;
+    }
+    /* deal img  */
+    .img-container {
+        grid-template-areas:
+            "img-card1"
+            "img-card2"
+            "img-card3";
+    }
+
+    .img-card1,
+    .img-card2,
+    .img-card3 {
+        height: 200px;
+    }
+    .footer-container,
+    .footer-link {
+        flex-direction: column;
+        gap: 0;
+        margin-left: 20px;
+    }
+}
+
+/*tablets */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .teams {
+        flex-direction: column;
+    }
+    .navbar,
+    .nav-links,
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plants-lover-container {
+        flex-direction: column;
+    }
+    .big-logo {
+        max-width: 100%;
+    }
+}
